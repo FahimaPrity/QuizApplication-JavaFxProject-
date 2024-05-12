@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="483.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myquiz.ScoreController">
+   <children>
+      <Label layoutX="241.0" layoutY="40.0" prefHeight="124.0" prefWidth="329.0" text="Score Calculation">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="marks" layoutX="70.0" layoutY="233.0" prefHeight="131.0" prefWidth="148.0" style="-fx-background-color: yellow; -fx-background-radius: 14px; -fx-background-border: 14px;" text="    9/10">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </Label>
+      <ProgressIndicator fx:id="correct_progress" layoutX="323.0" layoutY="222.0" minHeight="128.0" minWidth="128.0" prefHeight="153.0" prefWidth="165.0" progress="0.9" style="-fx-background-color: green; -fx-progress-color: green; -fx-font-weight: 900; -fx-font-size: 14px; -fx-background-radius: 14px; -fx-border-radius: 14px;">
+         <padding>
+            <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+         </padding>
+      </ProgressIndicator>
+      <ProgressIndicator fx:id="wrong_progress" layoutX="580.0" layoutY="222.0" minHeight="128.0" minWidth="128.0" prefHeight="153.0" prefWidth="165.0" progress="0.1" style="-fx-background-color: FFCDD2; -fx-progress-color: red; -fx-font-weight: 900; -fx-font-size: 14px; -fx-background-radius: 14px; -fx-border-radius: 14px; -fx-box-border: red;">
+         <padding>
+            <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+         </padding>
+      </ProgressIndicator>
+      <Label fx:id="markstext" layoutX="76.0" layoutY="384.0" prefHeight="53.0" prefWidth="165.0" text="   Marks Scored">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrongtext" layoutX="580.0" layoutY="384.0" prefHeight="53.0" prefWidth="165.0" text="  Wrong Answer : 1" textFill="RED">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="correcttext" layoutX="323.0" layoutY="384.0" prefHeight="53.0" prefWidth="165.0" text=" Correct Answer : 9" textFill="GREEN">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+   <Button fx:id="submitButton" layoutX="350.0" layoutY="450.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Close" onAction="#submitClicked"/>
+
+</AnchorPane>

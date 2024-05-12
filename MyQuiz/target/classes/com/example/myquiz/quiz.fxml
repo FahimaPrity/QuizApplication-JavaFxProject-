@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="395.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myquiz.QuizController">
+   <children>
+      <Label fx:id="question" layoutX="59.0" layoutY="38.0" prefHeight="78.0" prefWidth="616.0" text="1. How many consonants are there in English Alphabets?">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="opt1" layoutX="59.0" layoutY="149.0" mnemonicParsing="false" onAction="#opt1clicked" prefHeight="61.0" prefWidth="205.0" style="-fx-background-color: pink; -fx-background-radius: 32px;">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="opt2" layoutX="457.0" layoutY="252.0" mnemonicParsing="false" onAction="#opt2clicked" prefHeight="61.0" prefWidth="205.0" style="-fx-background-color: pink; -fx-background-radius: 32px;" />
+      <Button fx:id="opt3" layoutX="59.0" layoutY="252.0" mnemonicParsing="false" onAction="#opt3clicked" prefHeight="61.0" prefWidth="205.0" style="-fx-background-color: pink; -fx-background-radius: 32px;" />
+      <Button fx:id="opt4" layoutX="457.0" layoutY="149.0" mnemonicParsing="false" onAction="#opt4clicked" prefHeight="61.0" prefWidth="205.0" style="-fx-background-color: pink; -fx-background-radius: 32px;" />
+      <Button fx:id="nextButton" layoutX="495.0" layoutY="342.0" mnemonicParsing="false" onAction="#nextClicked" prefHeight="30.0" prefWidth="100.0" text="Next" />
+      <Button fx:id="prevButton" layoutX="127.0" layoutY="342.0" mnemonicParsing="false" onAction="#prevClicked" prefHeight="30.0" prefWidth="100.0" text="Previous" />
+      <Button fx:id="submitButton" layoutX="320.0" layoutY="342.0" mnemonicParsing="false" onAction="#submitClicked" prefHeight="30.0" prefWidth="100.0" text="Submit" visible="false" />
+   </children>
+</AnchorPane>
