@@ -16,6 +16,7 @@ This application allows users to take a quiz on various topics. It provides a us
 - Final score display at the end of the quiz
 ##Images
 ![Screenshot 2024-05-13 005053](https://github.com/FahimaPrity/QuizApplication-JavaFxProject-/assets/169589737/ea8eac6e-6efc-4a74-9532-0145693656e9)
+![Screenshot 2024-05-13 005131](https://github.com/FahimaPrity/QuizApplication-JavaFxProject-/assets/169589737/4c1e565f-9d0e-461c-b45a-c989da69c57b)
 ## Installation
 
 1. Clone the repository:
